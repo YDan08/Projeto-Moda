@@ -1,4 +1,3 @@
-import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@material-ui/core";
 import styled from "styled-components";
@@ -8,12 +7,11 @@ import { FiInfo } from "react-icons/fi"
 
 const Menu = () => {
 
-	useEffect(() => {
-		window.addEventListener('scroll', function () {
-			var header = this.document.querySelector("header")
-			header.classList.toggle("menu", this.window.scrollY > 0)
-		})
-	}, [])
+	window.addEventListener('scroll', function () {
+		var header = this.document.querySelector("header")
+		header.classList.toggle("menu", this.window.scrollY > 0)
+	})
+
 
 	const DivMenu = styled.div`
 	display: flex;
