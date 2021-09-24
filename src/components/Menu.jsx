@@ -5,15 +5,7 @@ import { FaHome, FaTshirt, FaBaby } from "react-icons/fa"
 import { GiDress } from "react-icons/gi"
 import { FiInfo } from "react-icons/fi"
 
-const Menu = () => {
-
-	window.addEventListener('scroll', function () {
-		var header = this.document.querySelector("header")
-		header.classList.toggle("menu", this.window.scrollY > 0)
-	})
-
-
-	const DivMenu = styled.div`
+const DivMenu = styled.div`
 	display: flex;
 	position: fixed;
 	width: 100%;
@@ -72,6 +64,15 @@ const Menu = () => {
 		}
 	}
 `
+
+
+
+const Menu = () => {
+
+	window.addEventListener('scroll', function () {
+		var header = this.document.querySelector("header")
+		header.classList.toggle("menu", this.window.scrollY > 0)
+	})
 
 	return (
 		<DivMenu >

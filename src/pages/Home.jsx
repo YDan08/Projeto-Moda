@@ -1,10 +1,7 @@
 import React from "react";
-import styled from "styled-components";
+import SimpleSlider from "../components/Carrossel";
 import Roupas from "../components/Roupas";
 
-const DivHome = styled.div`
-
-`
 
 const Home = (props) => {
 
@@ -15,9 +12,10 @@ const Home = (props) => {
 	const limite = [29.9, 219.9]
 
 	return (
-		<DivHome>
+		<>
+			<SimpleSlider />
 			<Roupas roupas={roupas} limite={limite} />
-		</DivHome>
+		</>
 	)
 }
 

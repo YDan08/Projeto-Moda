@@ -61,10 +61,10 @@ const DivRoupas = styled.div`
 
 const Roupas = (props) => {
 
-	const [valor, setValor] = useState(0)
-	const listaP = props.roupas
-	const [lista, setLista] = useState(listaP)
 
+	const listaP = props.roupas
+	const [valor, setValor] = useState()
+	const [lista, setLista] = useState(listaP)
 	const filtroValor = () => {
 		setLista(listaP.filter(lista => lista.valor <= valor))
 	}
@@ -72,6 +72,7 @@ const Roupas = (props) => {
 	const reset = () => {
 		setLista(listaP)
 	}
+
 
 	const pegarValor = (e) => {
 		setValor(e)

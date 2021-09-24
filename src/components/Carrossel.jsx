@@ -6,9 +6,7 @@ import modaMasc from "../img/moda-masculina.jpg"
 import modaFemi from "../img/moda-feminina.jpg"
 
 
-const SimpleSlider = () => {
-
-	const DivCarrosel = styled.div`
+const DivCarrosel = styled.div`
 	width: 90vw;
 	margin: 90px auto 0;
 	padding: 30px 0px;
@@ -20,6 +18,11 @@ const SimpleSlider = () => {
 			}
 		}
 	`
+
+
+const SimpleSlider = () => {
+
+
 
 	const settings = {
 		centerMode: true,

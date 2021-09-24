@@ -2,9 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-const Rodape = () => {
-
-	const DivRodape = styled.div`
+const DivRodape = styled.div`
 		.rodape{
 			width: 100%;
 			display: flex;
@@ -36,6 +34,11 @@ const Rodape = () => {
 			}
 		}
 	`
+
+
+const Rodape = () => {
+
+
 
 	return (
 		<DivRodape>
