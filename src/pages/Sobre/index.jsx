@@ -1,1 +1,1 @@
-export * from "./Sobre";
+export { default } from "./Sobre";

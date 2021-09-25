@@ -1,1 +1,1 @@
-export * from "./Infantil";
+export { default } from "./Infantil";

@@ -1,1 +1,1 @@
-export * from "./Feminino";
+export { default } from "./Feminino";
