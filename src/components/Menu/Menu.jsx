@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@material-ui/core";
-import styled from "styled-components";
 import { FaHome, FaTshirt, FaBaby } from "react-icons/fa";
 import { GiDress } from "react-icons/gi";
 import { FiInfo } from "react-icons/fi";
+import { Header, MenuContainer } from "./Menu.styled";
 
 const Menu = () => {
   useEffect(() => {
@@ -14,69 +14,9 @@ const Menu = () => {
     });
   }, []);
 
-  const DivMenu = styled.div`
-    display: flex;
-    position: fixed;
-    width: 100%;
-    top: 0%;
-    header {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      width: 100%;
-      padding: 10px;
-      height: 50px;
-      h1 {
-        a {
-          color: black;
-          text-decoration: none;
-        }
-      }
-      ul {
-        display: flex;
-        align-items: center;
-
-        li {
-          list-style: none;
-          margin-right: 10px;
-
-          a {
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            .icones {
-              margin-right: 5px;
-            }
-          }
-        }
-      }
-    }
-    .menu {
-      background-color: #f1c4ba;
-      h1 {
-        a {
-          color: #f6f6f6;
-        }
-      }
-
-      ul {
-        li {
-          a {
-            button {
-              color: #f6f6f6;
-            }
-            .icones {
-              color: #f6f6f6;
-            }
-          }
-        }
-      }
-    }
-  `;
-
   return (
-    <DivMenu>
-      <header>
+    <MenuContainer>
+      <Header>
         <h1>
           <Link to="/">Vortechs Moda</Link>
         </h1>
@@ -84,7 +24,6 @@ const Menu = () => {
           <li>
             <Link to="/">
               <Button>
-                {" "}
                 <FaHome className="icones" /> Home
               </Button>
             </Link>
@@ -119,8 +58,8 @@ const Menu = () => {
             </Link>
           </li>
         </ul>
-      </header>
-    </DivMenu>
+      </Header>
+    </MenuContainer>
   );
 };
 
