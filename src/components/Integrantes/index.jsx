@@ -1,1 +1,1 @@
-export * from "./Integrantes";
+export { default } from "./Integrantes";
