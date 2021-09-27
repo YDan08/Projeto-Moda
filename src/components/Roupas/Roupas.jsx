@@ -52,7 +52,7 @@ const Roupas = props => {
 					<Item key={i}>
 						<img src={valor.img} alt={valor.nome} />
 						<h3>{valor.nome}</h3>
-						<p>R$ {valor.valor}</p>
+						<p>R$ {valor.valor + 0.09}</p>
 						<CompraButton variant="outlined" className="MuiButton-root">Comprar</CompraButton>
 					</Item>
 				))}
