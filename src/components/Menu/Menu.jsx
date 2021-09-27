@@ -21,7 +21,7 @@ const Menu = () => {
 				<h1>
 					<Link to="/">Vortechs Moda</Link>
 				</h1>
-				<MenuResp onClick={listar}>
+				<MenuResp onClick={listar} scrolled={scrollY >= 20}>
 					<FaBars className='barra' />
 				</MenuResp>
 				<ul >

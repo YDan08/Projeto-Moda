@@ -70,11 +70,11 @@ export const MenuContainer = styled.div`
   z-index: 1051;
 `;
 
-export const MenuResp = styled.div`
+export const MenuResp = styled.div.withConfig()`
 	cursor: pointer;
 	display: none;
 	.barra{
-		color: ${props => props.scrolled ? "wihte" : "black"};
+		color: ${props => props.scrolled ? "white" : "black"};
 	}
 
 	@media (max-width: 999px){

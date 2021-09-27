@@ -8,7 +8,7 @@ export const Filtro = styled.div`
 
 export const RoupasContainer = styled.div`
   width: 90%;
-  margin: 10vh auto 40px;
+  margin: 12vh auto 40px;
 `
 
 export const RoupasContent = styled.div`
@@ -69,5 +69,12 @@ export const Item = styled.div`
 
 	@media (max-width: 999px){
 		width: 350px;
+	}
+
+	@media (max-width: 450px){
+		width: 200px;
+		img{
+			width: 150px;
+		}
 	}
 `

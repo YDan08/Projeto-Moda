@@ -15,4 +15,11 @@ export const CardContent = styled.div`
 	@media (max-width: 1500px){
 		margin: 20px 0 ;
 	}
+
+	@media (max-width: 450px){
+		width: 200px;
+		img{
+			width: 150px;
+		}
+	}
 `;

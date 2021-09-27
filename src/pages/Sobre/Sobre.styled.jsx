@@ -15,8 +15,6 @@ export const SobreContainer = styled.div`
   .integrantes {
     display: flex;
   }
-	@media (max-width: 999px){
-	}
 `;
 
 export const IntegrantesContent = styled.div`
