@@ -13,6 +13,7 @@ export const Header = styled.header.withConfig()`
   h1, a {
     color: ${props => props.scrolled ? "#f6f6f6" : "black"};
     text-decoration: none;
+		margin-left: 8px;
   }
 
   ul {
@@ -41,6 +42,7 @@ export const Header = styled.header.withConfig()`
   }
 
 	@media (max-width: 999px){
+		justify-content: space-between;
 		body{
 			overflow-x: hidden;
 		}
@@ -73,6 +75,7 @@ export const MenuContainer = styled.div`
 export const MenuResp = styled.div.withConfig()`
 	cursor: pointer;
 	display: none;
+	margin-right: 30px;
 	.barra{
 		color: ${props => props.scrolled ? "white" : "black"};
 	}

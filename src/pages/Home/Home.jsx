@@ -4,16 +4,14 @@ import Roupas from "../../components/Roupas";
 import { CarroselContainer } from "./Home.styled";
 
 const Home = props => {
-  const limite = [29.9, 219.9];
-
-  return (
-    <>
-      <CarroselContainer>
-        <Carrossel />
-      </CarroselContainer>
-      <Roupas roupas={props.roupas} limite={limite} />
-    </>
-  );
+	return (
+		<>
+			<CarroselContainer>
+				<Carrossel />
+			</CarroselContainer>
+			<Roupas roupas={props.roupas} />
+		</>
+	);
 };
 
 export default Home;

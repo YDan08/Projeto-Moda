@@ -2,13 +2,12 @@ import React from "react";
 import Roupas from "../../components/Roupas";
 
 const Infantil = props => {
-  const roupasInfantil = props.roupas.filter(valor => {
-    return valor.tipo === "infantil";
-  });
+	const roupasInfantil = props.roupas.filter(valor => {
+		return valor.tipo === "infantil";
+	});
 
-  const limite = [29.9, 69.9];
 
-  return <Roupas roupas={roupasInfantil} limite={limite} />;
+	return <Roupas roupas={roupasInfantil} />;
 };
 
 export default Infantil;

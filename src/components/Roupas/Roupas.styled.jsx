@@ -7,8 +7,12 @@ export const Filtro = styled.div`
 `
 
 export const RoupasContainer = styled.div`
-  width: 90%;
+  width: 100%;
   margin: 12vh auto 40px;
+	h1{
+		margin-left: 30px;
+		font-size: 30px;
+	}
 `
 
 export const RoupasContent = styled.div`

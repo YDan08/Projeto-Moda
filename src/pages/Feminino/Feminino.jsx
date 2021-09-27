@@ -2,13 +2,12 @@ import React from "react";
 import Roupas from "../../components/Roupas";
 
 const Feminino = props => {
-  const roupasFemi = props.roupas.filter(roupa => {
-    return roupa.tipo === "feminino";
-  });
+	const roupasFemi = props.roupas.filter(roupa => {
+		return roupa.tipo === "feminino";
+	});
 
-  const limite = [59.9, 139.9];
 
-  return <Roupas roupas={roupasFemi} limite={limite} />;
+	return <Roupas roupas={roupasFemi} />;
 };
 
 export default Feminino;

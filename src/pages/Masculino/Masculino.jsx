@@ -2,11 +2,10 @@ import React from "react";
 import Roupas from "../../components/Roupas";
 
 const Masculino = props => {
-  const roupaMasc = props.roupas.filter(valor => valor.tipo === "masculino");
+	const roupaMasc = props.roupas.filter(valor => valor.tipo === "masculino");
 
-  const limite = [49.9, 219.9];
 
-  return <Roupas roupas={roupaMasc} limite={limite} />;
+	return <Roupas roupas={roupaMasc} />;
 };
 
 export default Masculino;
