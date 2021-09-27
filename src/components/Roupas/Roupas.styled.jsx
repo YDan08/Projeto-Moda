@@ -17,12 +17,13 @@ export const RoupasContent = styled.div`
   margin: 0 auto;
   grid-template-columns: 1fr 1fr 1fr;
 	
-	@media (max-width:999px){
-		grid-template-columns: 1fr;
-	}
 
 	@media (max-width:1500px){
 		grid-template-columns: 1fr 1fr;
+	}
+
+	@media (max-width:999px){
+		grid-template-columns: 1fr;
 	}
 `
 
@@ -43,6 +44,7 @@ export const Item = styled.div`
   flex-direction: column;
   align-items: center;
   margin-bottom: 20px;
+	margin: 0px auto;
   padding: 10px;
   width: 450px;
   &:hover {
@@ -68,6 +70,5 @@ export const Item = styled.div`
 
 	@media (max-width: 999px){
 		width: 350px;
-		margin: 20px auto; 
 	}
 `

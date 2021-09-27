@@ -12,7 +12,7 @@ export const CardContent = styled.div`
     border: 2px solid #f1c4ba;
   }
 
-	@media (max-width: 999px){
+	@media (max-width: 1500px){
 		margin: 20px 0 ;
 	}
 `;
