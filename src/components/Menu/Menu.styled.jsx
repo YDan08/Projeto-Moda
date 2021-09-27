@@ -6,7 +6,7 @@ export const Header = styled.header.withConfig()`
   align-items: center;
   width: 100%;
   padding: 10px;
-  height: 50px;
+  height: 8vh;
   transition: background-color .1s ease-in-out;
   background-color: ${props => props.scrolled ? "#f1c4ba" : "transparent"};
 
@@ -39,6 +39,27 @@ export const Header = styled.header.withConfig()`
       }
     }
   }
+
+	@media (max-width: 999px){
+		body{
+			overflow-x: hidden;
+		}
+		ul{
+			position: absolute;
+			top: 8vh;
+			right: 0;
+			width: 100vw;
+			height: 92vh;
+			background-color: ${props => props.scrolled ? "#f1c4ba" : "white"};
+			flex-direction: column;
+			align-items: center;
+			justify-content: space-around;
+			transform: translateX(100%);
+		}
+		ul.active{
+			transform: translateX(0);
+		}
+	}
 `;
 
 export const MenuContainer = styled.div`
@@ -48,3 +69,15 @@ export const MenuContainer = styled.div`
   top: 0;
   z-index: 1051;
 `;
+
+export const MenuResp = styled.div`
+	cursor: pointer;
+	display: none;
+	.barra{
+		color: ${props => props.scrolled ? "wihte" : "black"};
+	}
+
+	@media (max-width: 999px){
+		display: block;
+	}
+`

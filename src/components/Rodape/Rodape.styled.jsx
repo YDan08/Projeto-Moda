@@ -5,8 +5,13 @@ export const FooterContainer = styled.footer`
   display: flex;
   justify-content: space-evenly;
   background-color: #e7a699;
-  margin-top: 30px;
   color: #f6f6f6;
+	padding: 17px;
+
+	@media(max-width:999px){
+		flex-direction: column;
+		justify-content: space-between;
+	}
 `;
 
 export const FooterContent = styled.div`
@@ -28,4 +33,13 @@ export const FooterContent = styled.div`
       font-size: 7px;
     }
   }
+	@media (max-width:999px){
+		width: 80%;
+		margin: 0 auto 20px;
+		ul{
+			li{
+				list-style: none;
+			}
+		}
+	}
 `;

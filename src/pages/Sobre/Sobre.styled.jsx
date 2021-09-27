@@ -6,7 +6,8 @@ export const SobreContainer = styled.div`
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  height: 72vh;
+	height: 64vh;
+	margin: 10vh 0;
 
   .integrantes {
     display: flex;
@@ -15,4 +16,7 @@ export const SobreContainer = styled.div`
 
 export const IntegrantesContent = styled.div`
   display: flex;
+	@media (max-width: 999px){
+		flex-direction: column;
+	}
 `;

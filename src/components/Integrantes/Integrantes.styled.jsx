@@ -11,4 +11,8 @@ export const CardContent = styled.div`
     border-radius: 20%;
     border: 2px solid #f1c4ba;
   }
+
+	@media (max-width: 999px){
+		margin: 20px 0 ;
+	}
 `;

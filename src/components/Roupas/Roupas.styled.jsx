@@ -8,14 +8,22 @@ export const Filtro = styled.div`
 
 export const RoupasContainer = styled.div`
   width: 90%;
-  margin: 90px auto 0;
+  margin: 10vh auto 40px;
 `
 
 export const RoupasContent = styled.div`
   display: grid;
-  width: 1500px;
+  width: 100%;
   margin: 0 auto;
   grid-template-columns: 1fr 1fr 1fr;
+	
+	@media (max-width:999px){
+		grid-template-columns: 1fr;
+	}
+
+	@media (max-width:1500px){
+		grid-template-columns: 1fr 1fr;
+	}
 `
 
 export const CompraButton = styled(Button)`
@@ -57,4 +65,9 @@ export const Item = styled.div`
     color: #e7a699;
     margin-bottom: 14px;
   }
+
+	@media (max-width: 999px){
+		width: 350px;
+		margin: 20px auto; 
+	}
 `

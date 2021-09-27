@@ -29,4 +29,8 @@ export const GlobalStyle = createGlobalStyle`
 	button {
 		cursor: pointer;
 	}
+
+	body{
+		overflow-x: hidden;
+	}
 `;
