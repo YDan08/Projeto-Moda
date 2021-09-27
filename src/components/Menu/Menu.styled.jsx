@@ -7,6 +7,7 @@ export const Header = styled.header.withConfig()`
   width: 100%;
   padding: 10px;
   height: 50px;
+  transition: background-color .1s ease-in-out;
   background-color: ${props => props.scrolled ? "#f1c4ba" : "transparent"};
 
   h1, a {
@@ -44,5 +45,6 @@ export const MenuContainer = styled.div`
   display: flex;
   position: fixed;
   width: 100%;
-  top: 0%;
+  top: 0;
+  z-index: 1051;
 `;
