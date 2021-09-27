@@ -1,22 +1,18 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@material-ui/core";
+import useScrollPosition from '@react-hook/window-scroll'
 import { FaHome, FaTshirt, FaBaby } from "react-icons/fa";
 import { GiDress } from "react-icons/gi";
 import { FiInfo } from "react-icons/fi";
 import { Header, MenuContainer } from "./Menu.styled";
 
 const Menu = () => {
-  useEffect(() => {
-    window.addEventListener("scroll", function () {
-      var header = this.document.querySelector("header");
-      header.classList.toggle("menu", this.window.scrollY > 0);
-    });
-  }, []);
+  const scrollY = useScrollPosition(60 /*fps*/)
 
   return (
     <MenuContainer>
-      <Header>
+      <Header scrolled={scrollY >= 20}>
         <h1>
           <Link to="/">Vortechs Moda</Link>
         </h1>
