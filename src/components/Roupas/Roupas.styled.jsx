@@ -43,8 +43,7 @@ export const Item = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 20px;
-	margin: 0px auto;
+	margin: 0px auto 20px;
   padding: 10px;
   width: 450px;
   &:hover {
